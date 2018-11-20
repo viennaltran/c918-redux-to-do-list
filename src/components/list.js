@@ -18,7 +18,7 @@ class List extends Component {
                 <h1 className="center">To Do List</h1>
                 <p className="center grey-text">now with Redux</p>
                 
-                <NavButton to="/add-tem" text="Add Item" />
+                <NavButton to="/add-item" text="Add Item" />
 
                 <ul className="collection">
                     {listElements}
