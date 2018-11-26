@@ -7,7 +7,7 @@ import NavButton from './nav_button';
 class AddItem extends Component {
     renderInput({size, input, label, meta:{touched, dirty, error}}){
         // const {size, input, label, meta:{touched, dirty, error}} = props;
-        console.log(arguments);
+        // console.log(arguments);
         return(
             <div className={`input-field col ${size}`}>
             <input {...input} type="text"/>
@@ -18,7 +18,7 @@ class AddItem extends Component {
     }
 
     handleAddItem = async (values) =>{
-        console.log('Form Values;', values);
+        // console.log('Form Values;', values);
         await this.props.addToDoItem(values);
 
         this.props.history.push('/');
